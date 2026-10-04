@@ -1,0 +1,431 @@
+/* =========================================================
+   RA BEAUTYCARE 
+   ========================================================= */
+
+/* Spinner */
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .8s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .8s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Back To Top */
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    z-index: 99;
+}
+
+/* Buttons */
+.btn {
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-md-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.btn-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-sm-square {
+    width: 34px;
+    height: 34px;
+}
+
+.btn-md-square {
+    width: 44px;
+    height: 44px;
+}
+
+.btn-lg-square {
+    width: 56px;
+    height: 56px;
+}
+
+.btn-primary-outline-0 {
+    border: 0;
+    color: var(--bs-white) !important;
+}
+
+.btn-light-outline-0 {
+    border: 0;
+    color: var(--bs-primary) !important;
+}
+
+.btn-primary-outline-0:hover,
+.btn-light-outline-0:hover {
+    background: var(--bs-secondary) !important;
+    color: var(--bs-white) !important;
+}
+
+/* Navbar */
+.navbar .navbar-nav .nav-link {
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: .5s;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--bs-primary);
+}
+
+.navbar-nav {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.navbar-nav .nav-item,
+.navbar-nav .nav-link {
+    display: block;
+}
+.navbar-brand img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    padding: 2px;
+    background: #fff;
+}
+
+.fixed-top {
+    width: 100%;
+    z-index: 9999;
+}
+
+body {
+    padding-top: 95px;
+}
+
+/* Carousel */
+.carousel-item {
+    position: relative;
+    min-height: 100vh;
+}
+
+.carousel-item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-item .carousel-caption {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(
+        rgba(255, 255, 255, .5),
+        rgba(255, 255, 255, .5)
+    );
+    background-size: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 0;
+}
+
+.carousel-control-prev .carousel-control-prev-icon,
+.carousel-control-next .carousel-control-next-icon {
+    background: transparent;
+}
+
+#carouselId .carousel-indicators {
+    padding-bottom: 30px;
+}
+
+#carouselId .carousel-indicators li {
+    border-top: 10px solid var(--bs-white);
+    border-bottom: 10px solid var(--bs-white);
+    border-right: 5px solid var(--bs-white);
+    border-left: 5px solid var(--bs-white);
+    margin-right: 10px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+#carouselId .carousel-indicators li.active {
+    background: var(--bs-primary);
+    border-color: var(--bs-primary);
+    border-right: 15px solid var(--bs-primary);
+    border-left: 15px solid var(--bs-primary);
+}
+
+/* Categories */
+.categories-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.categories-section .section-label {
+    color: #ff4f9a;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.categories-section h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #211f20;
+    margin-bottom: 10px;
+}
+
+.category-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .07);
+    transition: .3s ease;
+    height: 100%;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(255, 79, 154, .18);
+}
+
+.category-image {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+.category-content {
+    padding: 25px;
+    text-align: center;
+}
+
+.category-icon {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.category-content h3 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    color: #211f20;
+    margin-bottom: 12px;
+}
+
+.category-content p {
+    color: #718096;
+    font-size: 16px;
+    line-height: 1.6;
+    min-height: 52px;
+    margin-bottom: 20px;
+}
+
+.category-btn {
+    display: inline-block;
+    background-color: #ff4f9a;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.category-btn:hover {
+    background-color: #e83e87;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Services */
+.service-item {
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.service-item:hover {
+    background: var(--bs-primary) !important;
+}
+
+.service-item:hover h4,
+.service-item:hover p {
+    color: var(--bs-white);
+    transition: .5s;
+}
+
+.service-icon {
+    transition: .5s;
+}
+
+.service-item:hover .service-icon {
+    transform: translateY(-3px);
+}
+
+/* About */
+.about-text-ar {
+    font-size: 1.12rem;
+    line-height: 2.1;
+}
+
+.video {
+    position: relative;
+    padding-right: 70px;
+    padding-bottom: 70px;
+    border-radius: 10px;
+}
+
+/* Products */
+.pricing .pricing-item {
+    color: var(--bs-white);
+}
+
+.pricing .pricing-content {
+    background: rgba(255, 255, 255, .4);
+}
+
+.product-image {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.product-coming-soon {
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Appointment */
+.appointment-section {
+    background: linear-gradient(
+        rgba(0, 0, 0, .5),
+        rgba(0, 0, 0, .5)
+    ), url(../img/gallery-5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.appointment-form {
+    border-radius: 10px;
+}
+
+/* Testimonials */
+.testimonial {
+    background: linear-gradient(
+        rgba(0, 0, 0, .5),
+        rgba(0, 0, 0, .5)
+    ), url(../img/testimonial-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.testimonial .testimonial-item {
+    background: rgba(0, 0, 0, .4);
+}
+
+.testimonial .owl-carousel.testimonial-carousel {
+    position: relative;
+}
+
+.testimonial .owl-carousel.testimonial-carousel .owl-nav {
+    position: absolute;
+    top: -60px;
+    right: 0;
+    display: flex;
+    font-size: 40px;
+    color: var(--bs-white);
+}
+
+.testimonial .owl-carousel.testimonial-carousel .owl-nav .owl-prev {
+    margin-right: 40px;
+}
+
+.testimonial .owl-carousel.testimonial-carousel .owl-nav .owl-prev,
+.testimonial .owl-carousel.testimonial-carousel .owl-nav .owl-next {
+    transition: .5s;
+}
+
+.testimonial .owl-carousel.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial .owl-carousel.testimonial-carousel .owl-nav .owl-next:hover {
+    color: var(--bs-primary);
+}
+
+/* Footer */
+.footer {
+    background: var(--bs-dark);
+}
+
+.footer .footer-item a,
+.footer .footer-item p {
+    color: var(--bs-white);
+    line-height: 40px;
+    font-size: 17px;
+    transition: .5s;
+}
+
+.footer .footer-item a:hover {
+    letter-spacing: 2px;
+    color: var(--bs-primary) !important;
+}
+
+/* Copyright */
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, .08);
+    background: var(--bs-dark) !important;
+}
+
+/* Responsive */
+@media (max-width: 1199px) {
+    body {
+        padding-top: 90px;
+    }
+}
+
+@media (max-width: 767px) {
+    .categories-section {
+        padding: 60px 0;
+    }
+
+    .categories-section h2 {
+        font-size: 38px;
+    }
+
+    .category-image {
+        height: 220px;
+    }
+}
